@@ -1,0 +1,144 @@
+#navbar {
+  padding: 8px;
+  background-color: pink;
+}
+
+#navbar .col-lg-9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar .col-lg-9 .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#navbar .col-lg-9 .list a {
+  text-decoration: none;
+  color: black;
+}
+
+#navbar .col-lg-9 .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 15%;
+}
+
+header {
+  margin-top: 20px;
+}
+
+header p {
+  font-size: small;
+  color: gray;
+  padding: 8px;
+  margin-top: 20px;
+}
+
+header h2 {
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
+
+#filters .zeynab {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+#filters .zeynab .lists-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+#filters .zeynab .lists-1 a {
+  text-decoration: none;
+  color: black;
+}
+
+#filters .zeynab .end-p p {
+  text-align: end;
+  margin-bottom: auto;
+}
+
+#filters .zeynab .form form select {
+  padding: 12px;
+}
+
+#images-1 {
+  margin-top: 30px;
+}
+
+#images-1 .col-lg-3 .img-con {
+  position: relative;
+}
+
+#images-1 .col-lg-3 img {
+  width: 100%;
+}
+
+#images-1 .col-lg-3 .img-1 {
+  opacity: 1;
+  position: absolute;
+}
+
+#images-1 .col-lg-3:hover .img-1 {
+  opacity: 0;
+}
+
+#images-1 .col-lg-3 .img-2 {
+  opacity: 0;
+}
+
+#images-1 .col-lg-3 .img-icons {
+  bottom: 20px;
+  left: 100px;
+  position: absolute;
+}
+
+#images-1 .col-lg-3 .img-icons svg {
+  background-color: white;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+#images-1 .col-lg-3:hover .img-2 {
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#images-1 .col-lg-3:hover .img-2 .img-icons svg {
+  background-color: #e09191;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */
