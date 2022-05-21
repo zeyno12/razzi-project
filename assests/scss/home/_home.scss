@@ -1,15 +1,11 @@
 #navbar{
 
     padding: 8px;
-    background-color: white;
+    background-color:$maincolor;
     .col-lg-9{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+@include flex(flex,space-between,center);
 .list{
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
+@include fl-size(flex,50%,space-between);
     a{
         text-decoration: none;
         color: black;        
@@ -21,19 +17,15 @@
     }
 }
 .icons{
-    display: flex;
-    justify-content: space-between;
-    width: 15%;
+    @include fl-size(flex,15%,space-between);
 }
    }
 }
 header{
-    margin-top: 20px;
+    margin-top: $mt-20;
     p{
-        font-size: small;
-        color: gray;
-        padding: 8px;
-        margin-top: 20px;
+        @include fcp(small,gray,8px);
+        margin-top: $mt-20;
     }
     h2{
         text-align: center;
@@ -43,11 +35,9 @@ header{
 #filters{
     .zeynab{
         align-items: center;
-  margin-top: 30px;  
+        margin-top: 30px;  
   .lists-1{
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
+      @include fl-size(flex,100%,space-between);
       a{
           text-decoration: none;
           color: black;
@@ -106,7 +96,7 @@ header{
         left: 100px;
         position: absolute; 
         svg{
-            background-color: rgb(255, 255, 255);
+            background-color: $maincolor;
             padding: 4px;
             border-radius: 10px;
         }
@@ -124,35 +114,24 @@ header{
     text-align: center;
     margin-top: 20px;
  button{
-     padding: 8px;
-     width: 15%;
-     background-color: inherit;
+     @include pwb(8px,15%,inherit);
  }
  &:hover{
      button{
          background-color: black;
-         color: white;
+         color: $maincolor;
      }
  }
 }
 footer{
-    background-color: rgba(16, 15, 15, 0.902);
-    color: white;
-    margin-top: 60px;
-    padding: 20px;
+    color:$maincolor;
+    @include foot(rgba(16, 15, 15, 0.902),60px,20px);
     .imput-text{
-        text-align: center;
-        height: 150px;
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include mix-flex(center,150px,flex,column,center,center);
+        margin-top: $mt-20;
     input{
-        padding:10px 40px 10px 40px;
-        background-color: rgba(24, 24, 24, 0.606);
-        border: none;
-        color: lightgray;
+        @include inp(10px 40px 10px 40px,rgba(24, 24, 24, 0.606),none);
+        color: $maincolor;
     }
     }
   #footer-lists{
@@ -163,10 +142,7 @@ footer{
           }
       }
     .foot-ul{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: start;
+        @include flex2(flex,space-between,center,start);
    li{
        list-style-type: none;
    }

@@ -1,0 +1,44 @@
+@mixin flex ( $d-flex,$content,$items) {
+    display:$d-flex;
+    justify-content: $content;
+    align-items:$items;
+}
+@mixin fl-size ($d-flex,$width,$content) {
+    display: $d-flex;
+    width: $width;
+    justify-content: $content;
+}
+@include mix-flex($tl,$height,$d-flex,$f-dir,$items,$content){
+    text-align: $tl;
+    height: $height;
+    display: $d-flex;
+    flex-direction: $f-dir;
+    align-items: $items;
+    justify-content: $content;  
+}
+@mixin flex2 ($d-flex,$content,$items,$aling) {
+    display: $d-flex;
+    justify-content: $content;
+    align-items:$items;
+    text-align: $aling;
+}
+@mixin fcp($fs,$color,$pad) {
+    font-size: $fs;
+    color:$color;
+    padding: $pad;
+}
+@mixin pwb ($pad,$wid,$bg) {
+    padding: $oad;
+    width: $wid;
+    background-color:$bg;
+}
+@mixin foot ($bg,$mt,$pad) {
+    background-color: $bg;
+    margin-top: $mt;
+    padding: $pad;   
+}
+@mixin inp ($pad,$bg,$boder) {
+    padding:$pad;
+    background-color: $bg;
+    border: $boder;
+}
