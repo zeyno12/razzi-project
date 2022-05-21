@@ -1,6 +1,6 @@
 #navbar {
   padding: 8px;
-  background-color: pink;
+  background-color: white;
 }
 
 #navbar .col-lg-9 {
@@ -28,6 +28,10 @@
 #navbar .col-lg-9 .list a {
   text-decoration: none;
   color: black;
+}
+
+#navbar .col-lg-9 .list:hover a {
+  color: orange;
 }
 
 #navbar .col-lg-9 .icons {
@@ -78,6 +82,10 @@ header h2 {
   color: black;
 }
 
+#filters .zeynab .lists-1:hover a {
+  color: orange;
+}
+
 #filters .zeynab .end-p p {
   text-align: end;
   margin-bottom: auto;
@@ -108,6 +116,10 @@ header h2 {
   opacity: 0;
 }
 
+#images-1 .col-lg-3 p {
+  color: gray;
+}
+
 #images-1 .col-lg-3 .img-2 {
   opacity: 0;
 }
@@ -130,8 +142,75 @@ header h2 {
   transition: .5s;
 }
 
-#images-1 .col-lg-3:hover .img-2 .img-icons svg {
-  background-color: #e09191;
+.showing {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.showing button {
+  padding: 8px;
+  width: 15%;
+  background-color: inherit;
+}
+
+.showing:hover button {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  background-color: rgba(16, 15, 15, 0.902);
+  color: white;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+footer .imput-text {
+  text-align: center;
+  height: 150px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .imput-text input {
+  padding: 10px 40px 10px 40px;
+  background-color: rgba(24, 24, 24, 0.606);
+  border: none;
+  color: lightgray;
+}
+
+footer #footer-lists .razzi-icon p {
+  font-size: 35px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer #footer-lists .foot-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: start;
+}
+
+footer #footer-lists .foot-ul li {
+  list-style-type: none;
 }
 
 *, *::after, *::before {
